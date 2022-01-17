@@ -1,0 +1,26 @@
+package quiz;
+import java.util.Scanner;
+public class Quiz2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		
+		int num = 12345;
+		int reversed = 0;
+		int num2;
+		
+		System.out.println("Enter a positive integer: "+num);
+		
+		while (num!=0) {
+			 num2=num%10;
+			 reversed = reversed * 10 + num2;
+			 
+			 num/=10;
+		}
+	
+		System.out.println("The reverse is: "+reversed);
+	}
+
+}
