@@ -1,0 +1,34 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class QUIZ1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner (System.in);
+		
+		int attended;
+		int held;
+		int perc;
+		
+		System.out.println("Number of classes held : ");
+		held = input.nextInt();
+		
+		System.out.println("The number of classes attended: ");
+		attended = input.nextInt(); 
+		
+		perc =(held/attended)*100;
+		
+		System.out.println("Percentage of the class attended : " + perc);
+		
+		if (perc < 75)
+			System.out.println("DO NOT ALLOWED TO TAKE EXAM");
+		else 
+			System.out.println("You may proceed");
+		
+
+	}
+
+}
